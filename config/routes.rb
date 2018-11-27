@@ -13,8 +13,11 @@ Rails.application.routes.draw do
   # delete '/subs/:id', to 'subs#delete'
   # in rails resouces :controller name will take care of the above "get, post, put, delete"
   
+  # embedded routes or nested routes where topics is relying on the subs
   resources :subs do
     resources :topics
   end
-
+# if you want to see on local host 
+# bundle exec rails s
+# on web browser "localhost:3000/rails/info/routes"
 end
