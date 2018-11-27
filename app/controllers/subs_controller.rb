@@ -82,6 +82,7 @@ class SubsController < ApplicationController
     else
       render :edit
     end
+  end
 
     # delete
     def destroy
@@ -99,3 +100,6 @@ class SubsController < ApplicationController
       end
 
 end
+
+#   # <--! require makes it so you need to put it in before they can submit
+  # autofocus puts cursor in box so they can start typing> This is for _form.html.erb
