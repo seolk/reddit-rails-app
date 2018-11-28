@@ -20,4 +20,17 @@ Rails.application.routes.draw do
 # if you want to see on local host 
 # bundle exec rails s
 # on web browser "localhost:3000/rails/info/routes"
+
+# !! DO NOT DO !! 
+# resources :subs do
+#   resources :topics do
+#     resources :comments
+#   end
+# end
+
+# DO THIS!!
+  resources :topic do
+    resources :comments
+  end
+
 end
